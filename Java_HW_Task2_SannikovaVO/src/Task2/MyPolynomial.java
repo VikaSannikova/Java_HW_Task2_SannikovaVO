@@ -25,6 +25,9 @@ public class MyPolynomial {
                     if(coeffs[i]>0) polynom+='+';
                     polynom += coeffs[i] + "x";
                 }
+                else if(i==coeffs.length -1){
+                    polynom +=coeffs[i] + "x^" + i;
+                }
                 else{
                     if(coeffs[i]>0) polynom+='+';
                     polynom +=coeffs[i] + "x^" + i;}
