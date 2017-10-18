@@ -11,6 +11,10 @@ public class main {
         System.out.println(polyCoeffs.multiply(polyCoeffs1).toString());
         Ball ball = new Ball(1,1,1,1,-45);
         System.out.println(ball.toString());
+        Container cont =  new Container(-2,3,5,4);
+        System.out.println("IS IN? " + cont.collides(ball));
+        Container cont1 = new Container(0,1,1,1);
+        System.out.println("IS IN 1? " + cont1.collides(ball));
 
         //test!!!!!!!!!!!!!!!!!!!!!!!
     }
