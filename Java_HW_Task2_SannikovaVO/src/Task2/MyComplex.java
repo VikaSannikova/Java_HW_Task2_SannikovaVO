@@ -36,12 +36,13 @@ public class MyComplex {
     public String toString() {
         return "("+ real + ((imag>=0)?"+":"-") + imag +"i)";
     }
+
     public boolean isReal() {
         if(this.imag==0.0) return true;
         else
             return false;
     }
-    public boolean idImaginary()
+    public boolean isImaginary()
     {
         if(this.imag!=0.0)return true;
         else
